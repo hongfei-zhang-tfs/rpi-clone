@@ -586,7 +586,7 @@ get_src_disk()
 
 # ==== source (booted) disk info and default mount list
 #
-src_boot_dev=`findmnt /boot -o source -n | grep "/dev/"`
+src_boot_dev=`findmnt /boot/firmware -o source -n | grep "/dev/"`
 src_root_dev=`findmnt / -o source -n | grep "/dev/"`
 SD_slot_boot=0
 SD_slot_dst=0
