@@ -1,0 +1,11 @@
+[Unit]
+Description=Factory Flash Service
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/factory-flash.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
